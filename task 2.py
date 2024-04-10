@@ -1,6 +1,8 @@
 import requests
 import time
 
+url = "https://jsonplaceholder.typicode.com/posts/"
+
 def load_urls(url, file_name):
     response = requests.get(url)
     with open(file_name, "w") as file:
